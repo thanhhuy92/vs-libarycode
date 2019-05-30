@@ -1,50 +1,62 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DangNhapForm.ascx.cs" Inherits="Controls_DangNhapForm" %>
 <style type="text/css">
     .auto-style1 {
-        width: 100%;
+        width: 40%;
         height: 87px;
         margin-bottom: 0px;
-    }
-    .auto-style2 {
-        width: 189px;
-    }
-    .auto-style3 {
-        width: 230px;
+        border:1px solid red;
+        margin: 0 auto;
     }
     .auto-style4 {
         width: 189px;
-        height: 24px;
+        height: 47px;
     }
     .auto-style5 {
         width: 230px;
-        height: 24px;
+        height: 47px;
     }
     .auto-style6 {
-        height: 24px;
+        height: 47px;
+    }
+    .auto-style7 {
+        height: 49px;
+        font-size:1.8em;
+        text-align:center;
+    }
+    .auto-style8 {
+        width: 189px;
+        height: 33px;
+        text-align: right;
+    }
+    .auto-style9 {
+        width: 230px;
+        height: 33px;
+        text-align: right;
+    }
+    .auto-style10 {
+        height: 33px;
     }
 </style>
 
 <table class="auto-style1">
     <tr>
-        <td class="auto-style2">&nbsp;</td>
-        <td class="auto-style3">Đăng Nhập</td>
-        <td>&nbsp;</td>
+        <td class="auto-style7" colspan="3">Đăng Nhập</td>
     </tr>
     <tr>
-        <td class="auto-style2">Tên Đăng Nhập :</td>
-        <td class="auto-style3">
+        <td class="auto-style8">Tên Đăng Nhập :</td>
+        <td class="auto-style9">
             <asp:TextBox ID="txtdangnhap" runat="server" Width="170px"></asp:TextBox>
         </td>
-        <td>
-            &nbsp;</td>
+        <td class="auto-style10">
+            </td>
     </tr>
     <tr>
-        <td class="auto-style2">Mật Khẩu :</td>
-        <td class="auto-style3">
-            <asp:TextBox ID="txtmatkhau" runat="server" Width="170px"></asp:TextBox>
+        <td class="auto-style8">Mật Khẩu :</td>
+        <td class="auto-style9">
+            <asp:TextBox ID="txtmatkhau" runat="server" Width="170px" TextMode="Password"></asp:TextBox>
         </td>
-        <td>
-            &nbsp;</td>
+        <td class="auto-style10">
+            </td>
     </tr>
     <tr>
         <td class="auto-style4"></td>

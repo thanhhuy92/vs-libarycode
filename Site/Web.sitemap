@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="" title="Code Libary"  description="Home">
+    <siteMapNode url="~/TrangChu.aspx" title="Trang Chủ"  description="Go To The HomePage" />
+    
+      <siteMapNode url="~/Bai1_C.aspx" title="C/C++"  description="Học Lập Trình C/C++">
+      </siteMapNode>
+      
+    <siteMapNode url="~/Bai1_C_Sharp.aspx" title="C#"  description="Học Lập Trình C#">
+  </siteMapNode>
+
+    
+      <siteMapNode url="~/Bai1_HTML.aspx" title="HTML/HTML5"  description="Học Thiết Kế HTML/HTML5">
+      </siteMapNode>
+      
+        <siteMapNode url="~/Bai1_CSS.aspx" title="CSS/CSS3"  description="Học Thiết Kế CSS/CSS3">
+    </siteMapNode>
+  
+  <siteMapNode url="~/LienHe.aspx" title="Liên Hệ"  description="Liên Hệ Với Chúng Tôi"/>
+    </siteMapNode>
+    
+
+    
+</siteMap>

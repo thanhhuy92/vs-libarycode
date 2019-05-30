@@ -4,8 +4,9 @@
         width: 40%;
         height: 87px;
         margin-bottom: 0px;
-        border:1px solid red;
+        border:1px ridge #A9A9A9;
         margin: 0 auto;
+        margin-top: 10em;
     }
     .auto-style4 {
         width: 189px;
@@ -22,6 +23,8 @@
         height: 49px;
         font-size:1.8em;
         text-align:center;
+        background-color:#ff8c00;
+        color:#fff;
     }
     .auto-style8 {
         width: 189px;
@@ -35,6 +38,12 @@
     }
     .auto-style10 {
         height: 33px;
+    }
+    #cpMainContent_DangNhapForm_btndangnhap{
+        border:none;
+        background-color:#ff8c00 !important;
+        color:#fff;
+        border-radius:4px;
     }
 </style>
 
@@ -61,7 +70,7 @@
     <tr>
         <td class="auto-style4"></td>
         <td class="auto-style5">
-            <asp:Button ID="btndangnhap" runat="server" OnClick="btndangnhap_Click" Text="Đăng Nhập" />
+            <asp:Button ID="btndangnhap" runat="server" OnClick="btndangnhap_Click" Text="Đăng Nhập" Height="30px" Width="115px" />
         </td>
         <td class="auto-style6"></td>
     </tr>

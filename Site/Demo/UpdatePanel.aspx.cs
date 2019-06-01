@@ -11,4 +11,9 @@ public partial class Demo_UpdatePanel : BasePage
     {
         Label1.Text = System.DateTime.Now.ToString();
     }
+
+    protected void Timer1_Tick(object sender, EventArgs e)
+    {
+        Label1.Text = System.DateTime.Now.ToString();
+    }
 }

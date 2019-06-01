@@ -44,4 +44,9 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
             System.Threading.Thread.Sleep(10000);
         }
     }
+
+    protected void Comments_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }

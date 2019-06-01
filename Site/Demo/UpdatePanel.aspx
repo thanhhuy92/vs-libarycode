@@ -7,6 +7,9 @@
         <ContentTemplate>
             <asp:Button ID="Button1" runat="server" Text="Button" />
             <asp:Label ID="Label1" runat="server"></asp:Label>
+            <br />
+            <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
+            </asp:Timer>
         </ContentTemplate>
     </asp:UpdatePanel>
     

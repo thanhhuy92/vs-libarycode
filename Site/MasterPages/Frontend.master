@@ -31,6 +31,15 @@
               x.style.display = "block";
             }
         }
+ 
+        
+ 
+        document.getElementById("btnthoat").onclick = function () {
+            document.getElementById("btndn").style.visibility = true;
+            //document.getElementById("lbten").style.visibility = false;
+            //document.getElementById("btnthoat").style.visibility = false;
+           
+        };
     </script>
 </head>
 <body>
@@ -43,14 +52,18 @@
                     <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
                 </LevelStyles>
             </asp:TreeView>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div id="PageWrapper">
         <header id="header" class="headerdg">
             <div class="logo logodg">
                 <p><span style="background-color:#ff8c00;">Coder</span> Libary</p>
             </div>
-            <div class="dangnhap dangnhapdg">
-                <a href="../DangNhap.aspx" style="border-right:1px solid #fff;padding-right:1%">Đăng Nhập</a>
-                <a href="../DangKy.aspx" style="margin-left:1%;">Đăng Ký</a>
+            <div class="dangnhap">
+                <%--<a ID="adn" href="../DangNhap.aspx" style="border-right:1px solid #fff;padding-right:1%;display:block;border:1px solid #fff;">Đăng Nhập</a>--%>
+                <button ID="btndn" runat="server"><a href="../DangNhap.aspx">Đăng Nhập</a></button>
+                <asp:Label ID="lbten" runat="server" Text="Label"></asp:Label>
+                <asp:Button ID="btnthoat" runat="server" Text="Thoát" OnClick="btnthoat_Click"/>
+                <%--<a href="../DangKy.aspx" style="margin-left:1%;">Đăng Ký</a>--%>
             </div>
             <nav>
             <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
@@ -72,8 +85,8 @@
             <aside id="Sidebar" class="sidebar">
                 <p>Vui lòng chọn theme</p><br/>
                 <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
-                    <asp:ListItem>Monochrome</asp:ListItem>
-                    <asp:ListItem>DarkGrey</asp:ListItem>
+                    <asp:ListItem>HienDai</asp:ListItem>
+                    <asp:ListItem>CoHu</asp:ListItem>
                 </asp:DropDownList>
                  <thanhhuy:banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
             </aside>

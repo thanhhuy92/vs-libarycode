@@ -31,7 +31,7 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
         //Đoạn code dùng cho treeview
         switch (Page.Theme.ToLower())
         {
-            case "darkgrey":
+            case "cohu":
                 Menu1.Visible = false;
                 TreeView1.Visible = true;
                 break;
@@ -39,6 +39,17 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
                 Menu1.Visible = true;
                 TreeView1.Visible = false;
                 break;
+        }
+        if(Session["Name"] != null)
+        {
+            lbten.Text = Session["Name"].ToString();
+            btndn.Visible = false;
+            
+        }
+        else
+        {
+            lbten.Visible = false;
+            btnthoat.Visible = false;
         }
     }
 
@@ -49,5 +60,12 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
         preferredTheme.Value = ThemeList.SelectedValue;
         Response.Cookies.Add(preferredTheme);
         Response.Redirect(Request.Url.ToString());
+    }
+
+    protected void btnthoat_Click(object sender, EventArgs e)
+    {
+        Session.RemoveAll();
+        Response.Redirect("DangNhap.aspx");
+        
     }
 }

@@ -22,8 +22,9 @@ public partial class Controls_DangNhapForm : System.Web.UI.UserControl
         int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
         conn.Close();
 
-        if(temp == 1)
+        if (temp == 1)
         {
+            Session["Name"] = txtdangnhap.Text;
             Response.Redirect("TrangChu.aspx");
         }
         else

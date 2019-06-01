@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 88%;
+    width: 85%;
     height: 109px;
     line-height: 60px;
     float: left;
@@ -61,7 +61,7 @@ body {
 #btnthoat {
     margin-left: 1em;
     border: none;
-    width: 8%;
+    width: 5%;
     height: 30px;
     font-size: 1.2em;
     border-radius: 4px;
@@ -241,7 +241,7 @@ nav {
 #Sidebar {
     background-color: #333;
     width: 15%;
-    height: 990px;
+    height: 460px;
     float: right;
     /*display: none;*/
 }
@@ -343,7 +343,7 @@ nav {
 
 #cpMainContent_ContactForm_FormTable {
     width: 55%;
-    height: 450px;
+    height: 350px;
     border: 1px solid red;
     margin: 0 auto;
     margin-top: 5em;
@@ -478,11 +478,61 @@ footer {
     /*border:1px solid #fff;*/
 }
 
-.AJAX{
-    height:100px;
-    width:40%;
+.AJAX {
+    height: 150px;
+    width: 60%;
     /*background-image:url(Images/loading-click.gif);
     background-repeat:no-repeat;*/
     /*line-height:32px;*/
     margin: 0 auto;
 }
+
+.tailieuc{
+    height:400px;
+    width:80%;
+}
+.titlec{
+    font-size:2em;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:1em;
+}
+.boxtailieuc {
+    width: 10%;
+    height: 70px;
+    border: 2px ridge #6A5ACD;
+    border-radius:0px 15px 0px 0px;
+    margin-left: 5em;
+    float:left;
+    margin-top:1.5em;
+}
+.boxmuc {
+    border-bottom: 1px solid #6A5ACD;
+    border-radius: 0px 12px 0px 0px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #6A5ACD;
+    color: #fff;
+}
+.boxsobai {
+    text-align: center;
+    height: 37px;
+    line-height:37px;
+}
+.boxsobai a{
+    text-decoration:none;
+    display:block;
+    color:#000;
+}
+    .boxsobai a:hover{
+        text-decoration:underline;
+    }
+/*.boxtailieu {
+    width: 10%;
+    height: 70px;
+    border: 2px ridge #6A5ACD;
+    border-radius: 0px 15px 0px 0px;
+    margin-left: 1.5em;
+    float:left;
+}*/

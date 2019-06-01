@@ -4,10 +4,10 @@
     <siteMapNode url="" title="Code Libary"  description="Home">
     <siteMapNode url="~/TrangChu.aspx" title="Trang Chủ"  description="Go To The HomePage" />
     
-      <siteMapNode url="~/Bai1_C.aspx" title="C/C++"  description="Học Lập Trình C/C++">
+      <siteMapNode url="~/TaiLieu_C.aspx" title="C/C++"  description="Học Lập Trình C/C++">
       </siteMapNode>
       
-    <siteMapNode url="~/Bai1_C_Sharp.aspx" title="C#"  description="Học Lập Trình C#">
+    <siteMapNode url="~/TaiLieu_CSharp.aspx" title="C#"  description="Học Lập Trình C#">
   </siteMapNode>
 
     

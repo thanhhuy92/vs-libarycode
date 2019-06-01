@@ -2,7 +2,7 @@
 
 <asp:Panel ID="VerticalPanel" runat="server">
     <img style="width:100%;height:auto;margin-top:1em;" src="../App_Themes/HienDai/Images/Banner-doc-2.jpg" />
-    <img style="width:100%;height:auto;margin-top:1em;" src="../App_Themes/HienDai/Images/nguyen_tac_thiet_ke_banner_27.jpg" />
+    <%--<img style="width:100%;height:auto;margin-top:1em;" src="../App_Themes/HienDai/Images/nguyen_tac_thiet_ke_banner_27.jpg" />--%>
 </asp:Panel>
 <%--<asp:Panel ID="HorizontalPanel" runat="server">
     <p style="background-color:blue;" runat="server" id="HorizontalLInk">Đây là một Banner</p>

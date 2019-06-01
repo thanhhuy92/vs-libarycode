@@ -39,6 +39,9 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
             Message.Visible = true;
             Message.Text = MessageBody;
             FormTable.Visible = false;
+
+            //chờ trong 5s
+            System.Threading.Thread.Sleep(10000);
         }
     }
 }

@@ -40,6 +40,9 @@
         }
     }
 </script>
+
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+<ContentTemplate>
 <table class="auto-style1" runat="server" id="FormTable">
     <tr>
         <td class="auto-style3" colspan="3">Vui lòng nhập tên, email, số điện thoại của bạn</td>
@@ -112,3 +115,13 @@
     </tr>
 </table>
 <asp:Label ID="Message" runat="server" Text="Message Sent" Visible="false"/>
+    </ContentTemplate>
+</asp:UpdatePanel>
+<asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+    <ProgressTemplate>
+        <div class="AJAX">
+            <img src="../App_Themes/HienDai/Images/loading.gif" style="width:5%;height:auto;margin-top:2em;" />
+            <span>Hệ Thống Đang Xử Lý....Vui Lòng Chờ Trong Giây Lát ^-^</span>
+        </div>
+    </ProgressTemplate>
+</asp:UpdateProgress>

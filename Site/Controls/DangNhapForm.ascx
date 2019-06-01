@@ -18,6 +18,7 @@
     }
     .auto-style6 {
         height: 47px;
+        text-align:center;
     }
     .auto-style7 {
         height: 49px;
@@ -46,6 +47,19 @@
         border-radius:4px;
     }
 </style>
+<script>
+ 
+    document.getElementById("btndangnhap").onclick = function () {
+        document.getElementById("btndn").style.visibility = false;
+        //document.getElementById("btnthoat").style.visibility = true;
+        //document.getElementById("lbten").style.visibility = true;
+    };
+ 
+    //document.getElementById("btnthoat").onclick = function () {
+    //    document.getElementById("content").style.display = 'block';
+    //};
+ 
+</script>
 
 <table class="auto-style1">
     <tr>
@@ -66,6 +80,11 @@
         </td>
         <td class="auto-style10">
             </td>
+    </tr>
+    <tr>
+        <td class="auto-style6" colspan="3">
+            <Label ID="lbdk" runat="server"><a href="../DangKy.aspx">Chưa có tài khoản?</a></Label>
+        </td>
     </tr>
     <tr>
         <td class="auto-style4"></td>

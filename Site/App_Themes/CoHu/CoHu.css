@@ -1,0 +1,539 @@
+﻿* {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #32CD32;
+}
+
+#PageWrapper {
+    width: 100%;
+    margin: auto;
+}
+
+/*Open header*/
+
+.headerdg {
+    background-image:url("../Monochrome/Images/latin-11.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 85%;
+    margin:0 auto;
+}
+
+.logodg {
+    width: 80%;
+    height: 109px;
+    line-height: 60px;
+    float: left;
+}
+.logodg p{
+    color:#FFA500!important;
+}
+.logodg span{
+    background-color:#fff  !important;
+}
+
+    .logo p {
+        color: white;
+        font-size: 2.7em;
+        margin-left: 2%;
+    }
+
+.dangnhapdg {
+    width: 100%;
+    /*border:1px solid white;*/
+    height: 60px;
+    line-height: 60px;
+}
+
+    .dangnhapdg a {
+        text-decoration: none;
+        color: #FFA500;
+        font-size: 1.2em;
+    }
+
+        .dangnhap a:hover {
+            text-decoration: underline;
+        }
+
+nav {
+    width: 100%;
+    /*background-color: #FFA500;*/
+    height: 40px;
+    float: left;
+    /*border: 1px solid white;*/
+}
+
+.MainMenu ul {
+    /* Định dạng các menu cấp 1 như Home, Reviews, About, Login */
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    /*border: 1px solid white;*/
+}
+
+.MainMenu li {
+    /* Khi các menu cấp 1 kích hoạt (hay chế độ active) */
+    /*background-color: #FFA500;*/
+    width: 150px;
+    /*border: 1px solid white;*/
+}
+
+    .MainMenu li a {
+        text-align: center;
+        color: white;
+    }
+
+.MainMenu a.level2 {
+    /* Định dạng cho các menu cấp 2 như By Genre, All Reviews,... */
+    background-color: grey;
+}
+
+#Menu1 a:hover {
+    text-decoration: underline;
+}
+/*End Header*/
+
+/*Menu TreeView*/
+
+#TreeView1{
+    border: 1px solid red;
+    width: 15%;
+    background-color:#333;
+    border:3px solid #fff;
+    position:fixed;
+    display:none;
+    margin-top:2.5em;
+}
+    #TreeView1 a {
+        /*border: 1px solid blue;*/
+        display: block;
+        text-align:center;
+        width: 180px;
+        height:40px;
+        color:#fff;
+        line-height:40px;
+    }
+    #TreeView1 a:hover{
+        text-decoration: underline;
+
+    }
+.FirstLevelMenuItems {
+    /*border: 1px solid blue;*/
+    height: 30px;
+    text-align:center;
+    width:200px;
+    color:#fff;
+    line-height:30px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.icon {
+    display: block;
+    position: fixed;
+    background-color: #808080;
+    font-size: 1.4em;
+    width: 3%;
+    color: #fff;
+    height:40px;
+    line-height:40px;
+}
+.icon i{
+    margin-left:0.3em;
+}
+
+
+/*End TreeView*/
+
+/*Phần Trang Chủ*/
+#Banner2_VerticalPanel {
+    display: none;
+}
+
+#Banner3_VerticalPanel {
+    display: none;
+}
+#Banner2_Panel2{
+    display:none;
+}
+#Banner3_Panel1{
+    display:none;
+}
+#Banner1_Panel1{
+    display:none;
+}
+#Banner1_Panel2{
+    display:none;
+}
+#Banner1_VerticalPanel{
+    display:none;
+}
+#trangchu {
+    width: 80%;
+    /*height:500px;*/
+    /*margin-left: 3%;*/
+    margin: 0 auto;
+}
+
+.gioithieu {
+    height: 850px;
+    background-color: #808080;
+    width: 100%;
+    border-bottom: 20px solid #ffffff;
+    display: block;
+}
+
+.title {
+    height: 50px;
+    width: 30%;
+    /*border:1px solid white;*/
+    text-align: center;
+    margin: 0 auto;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.noidung {
+    width: 90%;
+    /*height:70px;*/
+    margin: 0 auto;
+}
+
+    .noidung h3 {
+        color: #fff;
+    }
+
+    .noidung img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .noidung p {
+        text-align: justify;
+        color: #fff;
+    }
+
+.laptrinh {
+    height: 500px;
+    background-color: #808080;
+    display: block;
+    border-bottom: 20px solid #ffffff;
+}
+
+.box {
+    width: 90%;
+    height: 170px;
+    /*border:1px solid #fff;*/
+    margin-left: 2em;
+    margin-top: 2.5em;
+}
+
+    .box img {
+        width: 280px;
+        height: auto;
+        float: left;
+        display: block;
+        margin-left: 0.5em;
+        margin-right: 1em;
+    }
+
+    .box p {
+        width: 100%;
+        color: #fff;
+        display: block;
+        /*border:1px solid red;*/
+        text-align: justify;
+        margin-right: 1em;
+    }
+
+    .box button {
+        margin-top: 0.8em;
+        width: 12%;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+    }
+
+        .box button a {
+            text-decoration: none;
+            font-size: 1.2em;
+            height: 35px;
+        }
+
+        .box button:hover {
+            background-color: #808080;
+        }
+
+        .box button a:hover {
+            color: #fff;
+        }
+
+.thietkeweb {
+    height: 500px;
+    background-color: #808080;
+    display: block;
+}
+
+#Sidebar {
+    background-color: #333;
+    width: 15%;
+    height: 100px;
+    float: right;
+    display: none;
+    position:fixed;
+    top:0;
+    right:0;
+    margin-top:2.5em;
+    border:1px solid #fff;
+}
+
+    #Sidebar p {
+        /*border:1px solid red;*/
+        color: #fff;
+        margin-top: 1em;
+        text-align: center;
+    }
+.icon1 {
+    display: block;
+    position: fixed;
+    background-color: #808080;
+    font-size: 1.4em;
+    width: 3%;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    top:0;
+    right:0;
+}
+.icon1 i {
+    margin-left: 0.3em;
+}
+#ThemeList {
+    /*border: 1px solid red;*/
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    height: 25px;
+}
+
+/*End Trang Chủ*/
+
+
+
+
+/*Trang Lập Trình C*/
+.HocC {
+    width: 20%;
+    float: left;
+}
+
+    .HocC p a {
+        display: block;
+        text-decoration: none !important;
+        margin-left: 10px;
+        color: #FFA500;
+    }
+
+    .HocC p {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-decoration: none;
+        border: 1px solid black;
+    }
+
+        .HocC p:hover {
+            background-color: #FFA500;
+        }
+
+    .HocC a:hover {
+        /*background-color: #FFA500;*/
+        color: white;
+        text-shadow: 1px 0px 0px white;
+    }
+
+.ThongTinBai {
+    width: 58%;
+    float: left;
+    /*margin-left:5px;*/
+}
+
+    .ThongTinBai h2 {
+        text-align: center;
+    }
+
+    .ThongTinBai h3 {
+        margin-left: 15px;
+    }
+
+    .ThongTinBai p {
+        margin-left: 15px;
+        text-align: justify;
+        margin-top: 12px;
+    }
+
+    .ThongTinBai img {
+        width: 100%;
+    }
+
+.btn {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    .btn a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+    }
+
+.btnleft {
+    width: 20%;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FFA500;
+}
+
+.btnright {
+    width: 20%;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FFA500;
+}
+/*End Trang Lập Trình C*/
+
+#MainContent #SiteMapPath1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.sitemap {
+    /*border: 1px solid red;*/
+    width: 35%;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color:#fff;
+}
+
+    .sitemap span {
+        /*border: 1px solid red;*/
+        text-decoration: none;
+        color:#fff
+    }
+    .sitemap span a{
+        color:#fff;
+    }
+
+/*ContactForm*/
+.ErrorMessage {
+    color: Red;
+}
+/*End*/
+
+
+
+.MyButton {
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    height: 270px;
+    clear: both;
+}
+
+.footer-box1 {
+    width: 50%;
+    height: 200px;
+    /*border:1px solid #fff;*/
+    float: left;
+}
+
+    .footer-box1 h2 {
+        color: #fff;
+        width: 35%;
+        height: 90px;
+        border-bottom: 1px solid #FFA500;
+        margin-top: 1em;
+        margin-left: 3em;
+        text-align: center;
+        line-height: 90px;
+    }
+
+    .footer-box1 p {
+        width: 80%;
+        height: 35px;
+        /*border:1px solid #fff;*/
+        font-size: 1.1em;
+        margin-left: 3em;
+        color: #fff;
+    }
+
+    .footer-box1 i {
+        margin-right: 0.5em;
+        font-size: 1.2em;
+    }
+
+    .footer-box1 p a {
+        text-decoration: none;
+        color: #FFA500;
+    }
+
+.footer-box2 {
+    width: 45%;
+    height: 250px;
+    /*border:1px solid #fff;*/
+    float: right;
+}
+
+    .footer-box2 h1 {
+        height: 120px;
+        /*border:1px solid #fff;*/
+        text-align: right;
+        color: #fff;
+        line-height: 120px;
+        margin-right: 2.5em;
+    }
+
+    .footer-box2 span {
+        /*border:1px solid #fff;*/
+        background-color: #FFA500;
+    }
+
+    .footer-box2 p {
+        color: #fff;
+        text-align: right;
+        margin-right: 4em;
+        font-size: 1.2em;
+    }
+
+.footer-icon {
+    /*border:1px solid #fff;*/
+    height: 30px;
+    margin-top: 1em;
+    text-align: right;
+    margin-right: 4em;
+}
+
+.footer-box2 i {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 0.5em;
+    /*border:1px solid #fff;*/
+}

@@ -45,6 +45,11 @@
         background-color:#ff8c00 !important;
         color:#fff;
         border-radius:4px;
+        font-size:1em;
+    }
+    .auto-style11 {
+        height: 33px;
+        text-align: center;
     }
 </style>
 <script>
@@ -64,6 +69,11 @@
 <table class="auto-style1">
     <tr>
         <td class="auto-style7" colspan="3">Đăng Nhập</td>
+    </tr>
+    <tr>
+        <td class="auto-style11" colspan="3">
+    <asp:Label ID="lbthongbao" runat="server" Text="Label"></asp:Label>
+        </td>
     </tr>
     <tr>
         <td class="auto-style8">Tên Đăng Nhập :</td>
@@ -95,6 +105,5 @@
     </tr>
 </table>
 <p>
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-</p>
+    &nbsp;</p>
 

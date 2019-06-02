@@ -11,7 +11,7 @@ public partial class Controls_DangNhapForm : System.Web.UI.UserControl
     SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbdulieu.mdf;Integrated Security=True");
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        lbthongbao.Visible = false;
     }
 
     protected void btndangnhap_Click(object sender, EventArgs e)
@@ -29,8 +29,10 @@ public partial class Controls_DangNhapForm : System.Web.UI.UserControl
         }
         else
         {
-            Label1.ForeColor = System.Drawing.Color.Red;
-            Label1.Text = "your user and pass is invalid";
+            
+            lbthongbao.ForeColor = System.Drawing.Color.Red;
+            lbthongbao.Visible = true;
+            lbthongbao.Text = "bạn nhập không hợp lệ !!!";
         }
     }
 }

@@ -3,19 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    <section class="HocC">
-        <p style="text-align:center;background-color:#FFA500;color:white;font-weight:bold;font-size:20px;">Học C#</p>
-        <p><a href="Bai1_C_Sharp.aspx">Bài 1: Giới Thiệu .NET</a></p>
-        <p><a href="Bai2_C_Sharp.aspx">Bài 2: Giới Thiệu C#</a></p>
-        <p style="background-color:#FFA500;"><a href="Bai3_C_Sharp.aspx" style="color:white;font-weight:bold;">Bài 3: Biến, Hằng Và Kiểu Dữ Liệu</a></p>
-        <p><a href="Bai4_C_Sharp.aspx">Bài 4: Cấu Trúc Rẽ Nhánh (IF)</a></p>
-        <p><a href="Bai5_C_Sharp.aspx">Bài 5: Cấu Trúc Lựa Chọn (SWITCH)</a></p>
-        <p><a href="Bai6_C_Sharp.aspx">Bài 6: Cấu Trúc Vòng Lặp FOR</a></p>
-        <p><a href="Bai7_C_Sharp.aspx">Bài 7: Cấu Trúc Vòng Lặp WHILE</a></p>
-        <p><a href="Bai8_C_Sharp.aspx">Bài 8: Cấu Trúc Vòng Lặp DO-WHILE</a></p>
-        <p><a href="Bai9_C_Sharp.aspx">Bài 9: Mảng (ARRAY)</a></p>
-        <p><a href="Bai10_C_Sharp.aspx">Bài 10: Dữ Liệu Có Cấu Trúc (STRUCT)</a></p>
-    </section>
     <section class="ThongTinBai">
         <h2>BÀI 3. BIẾN, HẰNG VÀ KIỂU DỮ LIỆU</h2>
         <p>Biến</p>
@@ -70,10 +57,10 @@
         <p>Ví dụ trên cho thấy sau khi thực hiện toán tử gán thì giá trị của biểu thức bên phải sẽ được gán vào biến bên trái cho dù biểu thức ở phía bên phải có sự xuất hiện của biến được trả về. Cũng trong ví dụ này, để mô tả ký tự \ (ký tự đường dẫn hay ký tự Backslash), chúng ta phải sử dụng quy định của Escape Sequence, trong trường hợp này, ví dụ sử dụng ký tự \\.</p>
         <div class="btn">
             <button class="btnleft">
-                <a href="Bai1_C_Sharp.aspx"><< Trang Trước</a>
+                <a href="Bai2_C_Sharp.aspx">Trang Trước</a>
             </button>
             <button class="btnright">
-                <a href="Bai3_C_Sharp.aspx">Trang Sau >></a>
+                <a href="Bai4_C_Sharp.aspx">Trang Sau</a>
             </button>
         </div>
     </section>

@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../Scripts/modernizr-2.6.2.js"></script>
     <script>
+        //function myFunction() {
+        //    var x = document.getElementById("TreeView1");
+        //    if (x.style.display === "block") {
+        //        x.style.display = "none";
+        //    }
+        //    else {
+        //      x.style.display = "block";
+        //    }
+        //}
         function myFunction() {
-            var x = document.getElementById("TreeView1");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            }
-            else {
-              x.style.display = "block";
-            }
-        }
-        function myFunction1() {
             var x = document.getElementById("Sidebar");
             if (x.style.display === "block") {
                 x.style.display = "none";
@@ -44,14 +44,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <%--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-align-justify"></i>
+            </a>--%>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-align-justify"></i>
             </a>
-            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
-                <LevelStyles>
-                    <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
-                </LevelStyles>
-            </asp:TreeView>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div id="PageWrapper">
         <header id="header" class="headerdg">
@@ -78,23 +76,25 @@
             <div class="sitemap">
                 <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br /><br />
             </div>
-            <a href="javascript:void(0);" class="icon1" onclick="myFunction1()">
-                <i class="fa fa-share-alt"></i>
-            </a>
-            <thanhhuy:banner ID="Banner2" runat="server" DisplayDirection="Vertical" />
+            
             <aside id="Sidebar" class="sidebar">
                 <p>Vui lòng chọn theme</p><br/>
                 <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
                     <asp:ListItem>HienDai</asp:ListItem>
                     <asp:ListItem>CoHu</asp:ListItem>
                 </asp:DropDownList>
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
+                <LevelStyles>
+                    <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+                </LevelStyles>
+            </asp:TreeView>
                  <thanhhuy:banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
             </aside>
             
             <asp:ContentPlaceHolder id="cpMainContent" runat="server">
                 
             </asp:ContentPlaceHolder>
-            <thanhhuy:banner ID="Banner3" runat="server" DisplayDirection="Vertical" />
+            
         </section>
         
         <footer>

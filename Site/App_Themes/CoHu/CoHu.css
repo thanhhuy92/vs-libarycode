@@ -5,60 +5,65 @@
 }
 
 body {
-    background-color: #32CD32;
+    background-color: #A9A9A9;
 }
 
 #PageWrapper {
-    width: 100%;
+    width: 85%;
     margin: auto;
+    background-color:#fff;
 }
 
 /*Open header*/
 
-.headerdg {
-    background-image:url("../Monochrome/Images/latin-11.jpg");
-    background-size: 100% 100%;
-    background-repeat:no-repeat;
+#header {
+    background-color: #fff;
     height: 150px;
-    width: 85%;
-    margin:0 auto;
+    width: 100%;
 }
 
-.logodg {
-    width: 80%;
+.logo {
+    width: 85%;
     height: 109px;
     line-height: 60px;
     float: left;
 }
-.logodg p{
-    color:#FFA500!important;
-}
-.logodg span{
-    background-color:#fff  !important;
-}
 
     .logo p {
-        color: white;
         font-size: 2.7em;
         margin-left: 2%;
     }
 
-.dangnhapdg {
+.dangnhap {
     width: 100%;
-    /*border:1px solid white;*/
-    height: 60px;
-    line-height: 60px;
+    /*border:1px solid red;*/
+    height: 50px;
+    line-height: 50px;
 }
 
-    .dangnhapdg a {
+#btndn {
+    width: 12%;
+    height: 35px;
+    font-size: 1.2em;
+}
+
+    #btndn a {
         text-decoration: none;
-        color: #FFA500;
-        font-size: 1.2em;
+        color:#000;
     }
 
-        .dangnhap a:hover {
-            text-decoration: underline;
-        }
+
+#lbten {
+    font-size: 1.2em;
+}
+
+#btnthoat {
+    margin-left: 1em;
+    width: 5%;
+    height: 30px;
+    font-size: 1.2em;
+}
+
 
 nav {
     width: 100%;
@@ -97,92 +102,61 @@ nav {
 #Menu1 a:hover {
     text-decoration: underline;
 }
+
+.icon{
+    width:3%;
+    height:35px;
+    line-height:35px;
+    font-size:1.5em;
+    border:2px solid #fff;
+    color:#fff;
+    left:0;
+    top:6%;
+    position:fixed;
+    text-align:center;
+}
 /*End Header*/
 
-/*Menu TreeView*/
+/*Treeview*/
 
-#TreeView1{
-    border: 1px solid red;
-    width: 15%;
-    background-color:#333;
-    border:3px solid #fff;
-    position:fixed;
-    display:none;
-    margin-top:2.5em;
+#TreeView1 {
+    border: 1px solid #A9A9A9;
+    width:100%;
+    height:190px;
 }
-    #TreeView1 a {
-        /*border: 1px solid blue;*/
-        display: block;
-        text-align:center;
-        width: 180px;
-        height:40px;
-        color:#fff;
-        line-height:40px;
-    }
-    #TreeView1 a:hover{
-        text-decoration: underline;
-
-    }
-.FirstLevelMenuItems {
-    /*border: 1px solid blue;*/
-    height: 30px;
+#TreeView1 table {
+    width:100%;
+}
+#TreeView1 td {
+    border: 1px solid #A9A9A9;
+    width:100%;
+    height:30px;
     text-align:center;
-    width:200px;
-    color:#fff;
-    line-height:30px;
-    border-top:1px solid #fff;
-    border-bottom:1px solid #fff;
+    border-left:none;
+    border-right:none;
 }
-.icon {
-    display: block;
-    position: fixed;
-    background-color: #808080;
-    font-size: 1.4em;
-    width: 3%;
-    color: #fff;
-    height:40px;
-    line-height:40px;
+#TreeView1 a{
+    color:#000;
+    display:block;
+    
 }
-.icon i{
-    margin-left:0.3em;
-}
-
-
-/*End TreeView*/
+/*end Treeview*/
 
 /*Phần Trang Chủ*/
-#Banner2_VerticalPanel {
-    display: none;
-}
 
-#Banner3_VerticalPanel {
-    display: none;
-}
-#Banner2_Panel2{
-    display:none;
-}
-#Banner3_Panel1{
-    display:none;
-}
-#Banner1_Panel1{
-    display:none;
-}
-#Banner1_Panel2{
-    display:none;
-}
 #Banner1_VerticalPanel{
     display:none;
 }
+
 #trangchu {
     width: 80%;
     /*height:500px;*/
-    /*margin-left: 3%;*/
-    margin: 0 auto;
+    margin-left: 3%;
 }
 
 .gioithieu {
     height: 850px;
-    background-color: #808080;
+    background-color: #FF6347;
     width: 100%;
     border-bottom: 20px solid #ffffff;
     display: block;
@@ -222,7 +196,7 @@ nav {
 
 .laptrinh {
     height: 500px;
-    background-color: #808080;
+    background-color: #6A5ACD;
     display: block;
     border-bottom: 20px solid #ffffff;
 }
@@ -277,50 +251,35 @@ nav {
 
 .thietkeweb {
     height: 500px;
-    background-color: #808080;
+    background-color: #32CD32;
     display: block;
+    border-bottom: 20px solid #ffffff;
 }
 
 #Sidebar {
-    background-color: #333;
     width: 15%;
-    height: 100px;
-    float: right;
+    height: 289px;
+    background-color:#fff;
     display: none;
     position:fixed;
-    top:0;
-    right:0;
-    margin-top:2.5em;
-    border:1px solid #fff;
+    border: 3px ridge;
+    left:0;
+    top:12.5%;
 }
 
     #Sidebar p {
         /*border:1px solid red;*/
-        color: #fff;
         margin-top: 1em;
         text-align: center;
     }
-.icon1 {
-    display: block;
-    position: fixed;
-    background-color: #808080;
-    font-size: 1.4em;
-    width: 3%;
-    color: #fff;
-    height: 40px;
-    line-height: 40px;
-    top:0;
-    right:0;
-}
-.icon1 i {
-    margin-left: 0.3em;
-}
+
 #ThemeList {
-    /*border: 1px solid red;*/
-    width: 50%;
+    /*border:1px solid red;*/
+    width: 65%;
     margin: 0 auto;
     display: block;
     height: 25px;
+    margin-bottom:1.5em;
 }
 
 /*End Trang Chủ*/
@@ -329,40 +288,11 @@ nav {
 
 
 /*Trang Lập Trình C*/
-.HocC {
-    width: 20%;
-    float: left;
-}
-
-    .HocC p a {
-        display: block;
-        text-decoration: none !important;
-        margin-left: 10px;
-        color: #FFA500;
-    }
-
-    .HocC p {
-        height: 40px;
-        line-height: 40px;
-        font-size: 14px;
-        text-decoration: none;
-        border: 1px solid black;
-    }
-
-        .HocC p:hover {
-            background-color: #FFA500;
-        }
-
-    .HocC a:hover {
-        /*background-color: #FFA500;*/
-        color: white;
-        text-shadow: 1px 0px 0px white;
-    }
 
 .ThongTinBai {
-    width: 58%;
-    float: left;
-    /*margin-left:5px;*/
+    width: 80%;
+    /*border: 1px solid red;*/
+    margin-left: 2em;
 }
 
     .ThongTinBai h2 {
@@ -398,25 +328,60 @@ nav {
     }
 
 .btnleft {
-    width: 20%;
+    width: 12%;
     border: none;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     background-color: #FFA500;
+    margin-right: 0.5em;
 }
 
 .btnright {
-    width: 20%;
+    width: 12%;
     border: none;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     background-color: #FFA500;
+    margin-left: 0.5em;
 }
 /*End Trang Lập Trình C*/
 
+/*Trang Liên Hệ*/
+#cpMainContent_ContactForm_UpdatePanel1 {
+    height: 500px;
+}
+
+#cpMainContent_ContactForm_FormTable {
+    width: 55%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 5em;
+    border-radius: 5px;
+    background-color: #6A5ACD;
+}
+
+#cpMainContent_ContactForm_SendButton {
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #fff !important;
+    color: #000;
+    font-size: 1.1em;
+}
+
+    #cpMainContent_ContactForm_SendButton:hover {
+        background-color: #808080 !important;
+        color: #fff;
+    }
+
+/*End Trang Liên Hệ*/
+
+/*Trang Đăng Ký*/
+
+/*End Trang Đăng Ký*/
 #MainContent #SiteMapPath1 a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 1.1em;
 }
 
@@ -427,16 +392,11 @@ nav {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    color:#fff;
 }
 
     .sitemap span {
         /*border: 1px solid red;*/
         text-decoration: none;
-        color:#fff
-    }
-    .sitemap span a{
-        color:#fff;
     }
 
 /*ContactForm*/
@@ -536,4 +496,81 @@ footer {
     color: #fff;
     margin-right: 0.5em;
     /*border:1px solid #fff;*/
+}
+
+.AJAX {
+    height: 150px;
+    width: 60%;
+    /*background-image:url(Images/loading-click.gif);
+    background-repeat:no-repeat;*/
+    /*line-height:32px;*/
+    margin: 0 auto;
+}
+
+.tailieuc {
+    height: 400px;
+    width: 80%;
+}
+
+.titlec {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.boxtailieult {
+    width: 10%;
+    height: 70px;
+    border: 2px ridge #6A5ACD;
+    border-radius: 0px 15px 0px 0px;
+    margin-left: 5em;
+    float: left;
+    margin-top: 1.5em;
+}
+
+.boxlt {
+    border-bottom: 1px solid #6A5ACD;
+    border-radius: 0px 12px 0px 0px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #6A5ACD;
+    color: #fff;
+}
+
+.boxsobai {
+    text-align: center;
+    height: 37px;
+    line-height: 37px;
+}
+
+    .boxsobai a {
+        text-decoration: none;
+        display: block;
+        color: #000;
+    }
+
+        .boxsobai a:hover {
+            text-decoration: underline;
+        }
+
+.boxtailieutkw {
+    width: 10%;
+    height: 70px;
+    border: 2px ridge #32CD32;
+    border-radius: 0px 15px 0px 0px;
+    margin-left: 5em;
+    float: left;
+    margin-top: 1.5em;
+}
+
+.boxtkw {
+    border-bottom: 1px solid #32CD32;
+    border-radius: 0px 12px 0px 0px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #32CD32;
+    color: #fff;
 }

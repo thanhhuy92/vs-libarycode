@@ -27,6 +27,18 @@
         width: 293px;
         color:#fff;
     }
+    .auto-style8 {
+        width: 293px;
+        color: #fff;
+        height: 70px;
+    }
+    .auto-style9 {
+        width: 209px;
+        height: 70px;
+    }
+    .auto-style10 {
+        height: 70px;
+    }
 </style>
 <script type="text/javascript">
     function validatePhoneNumbers(source, args) {
@@ -102,11 +114,11 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style7">&nbsp;</td>
-        <td class="auto-style2">
+        <td class="auto-style8"></td>
+        <td class="auto-style9">
             <asp:Button ID="SendButton" runat="server" Text="Gửi" OnClick="SendButton_Click" Height="36px" Width="85px" />
         </td>
-        <td>&nbsp;</td>
+        <td class="auto-style10"></td>
     </tr>
     <tr>
         <td colspan="3">

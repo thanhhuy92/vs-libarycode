@@ -3,19 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    <section class="HocC">
-        <p style="text-align:center;background-color:#FFA500;color:white;font-weight:bold;font-size:20px;">Học HTML/HTML5</p>
-        <p><a href="Bai1_HTML.aspx">Bài 1: Giới Thiệu Về HTML</a></p>
-        <p style="background-color:#FFA500;"><a href="Bai2_HTML.aspx" style="color:white;font-weight:bold;">Bài 2: Soạn Thảo HTML</a></p>
-        <p><a href="Bai3_HTML.aspx">Bài 3: Vài Ví Dụ Cơ Bản</a></p>
-        <p><a href="Bai4_HTML.aspx">Bài 4: Các Thành Phần Của HTML</a></p>
-        <p><a href="Bai5_HTML.aspx">Bài 5: Các Thuộc Tính</a></p>
-        <p><a href="Bai6_HTML.aspx">Bài 6: Đề Mục Trong HTML</a></p>
-        <p><a href="Bai7_HTML.aspx">Bài 7: Đoạn Văn Trong HTML</a></p>
-        <p><a href="Bai8_HTML.aspx">Bài 8: Định Dạng Trong HTML</a></p>
-        <p><a href="Bai9_HTML.aspx">Bài 9: Trích Dẫn Trong HTML</a></p>
-        <p><a href="Bai10_HTML.aspx">Bài 10: Mã Lập Trình Trong HTML</a></p>
-    </section>
     <section class="ThongTinBai">
         <h2>BÀI 2. SOẠN THẢO HTML</h2>
         <p>Viết mã HTML bằng Notepad</p>
@@ -31,6 +18,14 @@
         <p>Đối với Windows 8 về sau: Mở Start Screen và gõ Notepad vào ô tìm kiếm.</p>
         <p>Bước 2: Viết một tài liệu HTML đơn giản</p>
         <p>Viết hoặc copy đoạn mã HTML sau vào trong Notepad.</p>
+        <div class="btn">
+            <button class="btnleft">
+                <a href="Bai1_HTML.aspx">Trang Trước</a>
+            </button>
+            <button class="btnright">
+                <a href="Bai3_HTML.aspx">Trang Sau</a>
+            </button>
+        </div>
     </section>
 </asp:Content>
 

@@ -11,10 +11,10 @@
   </siteMapNode>
 
     
-      <siteMapNode url="~/Bai1_HTML.aspx" title="HTML/HTML5"  description="Học Thiết Kế HTML/HTML5">
+      <siteMapNode url="~/TaiLieu_HTML.aspx" title="HTML/HTML5"  description="Học Thiết Kế HTML/HTML5">
       </siteMapNode>
       
-        <siteMapNode url="~/Bai1_CSS.aspx" title="CSS/CSS3"  description="Học Thiết Kế CSS/CSS3">
+        <siteMapNode url="~/TaiLieu_CSS.aspx" title="CSS/CSS3"  description="Học Thiết Kế CSS/CSS3">
     </siteMapNode>
   
   <siteMapNode url="~/LienHe.aspx" title="Liên Hệ"  description="Liên Hệ Với Chúng Tôi"/>

@@ -3,19 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    <section class="HocC">
-        <p style="text-align:center;background-color:#FFA500;color:white;font-weight:bold;font-size:20px;">Học C/C++</p>
-        <p style="background-color:#FFA500;"><a href="Bai1_C.aspx" style="color:white;font-weight:bold;">Bài 1: Giới Thiệu C/C++</a></p>
-        <p><a href="Bai2_C.aspx">Bài 2: Kiểu Dữ Liệu, Toán Tử, Hàm Số</a></p>
-        <p><a href="Bai3_C.aspx">Bài 3: Câu Lệnh Vào/Ra</a></p>
-        <p><a href="Bai4_C.aspx">Bài 4: Cấu Trúc Rẽ Nhành (IF)</a></p>
-        <p><a href="Bai5_C.aspx">Bài 5: Cấu Trúc Lựa Chọn (SWITCH)</a></p>
-        <p><a href="Bai6_C.aspx">Bài 6: Cấu Trúc Lặp FOR</a></p>
-        <p><a href="Bai7_C.aspx">Bài 7: Cấu Trúc Lặp WHILE</a></p>
-        <p><a href="Bai8_C.aspx">Bài 8: Cấu Trúc Lặp DO-WHILE</a></p>
-        <p><a href="Bai9_C.aspx">Bài 9: Dữ Liệu Kiểu Mảng (ARRAY)</a></p>
-        <p><a href="Bai10_C.aspx">Bài 10: Dữ Liệu Có Cấu Trúc (STRUCT)</a></p>
-    </section>
     <section class="ThongTinBai">
         <h2>Bài 1: Giới Thiệu C/C++</h2><br />
         <p><strong>Ngôn ngữ lập trình C</strong> là một ngôn ngữ mệnh lệnh được phát triển từ đầu thập niên 1970 bởi Dennis Ritchie để dùng trong hệ điều hành UNIX. Từ đó, ngôn ngữ này đã lan rộng ra nhiều hệ điều hành khác và trở thành một những ngôn ngữ phổ dụng nhất. C là ngôn ngữ rất có hiệu quả và được ưa chuộng nhất để viết các phần mềm hệ thống, mặc dù nó cũng được dùng cho việc viết các ứng dụng. Ngoài ra, C cũng thường được dùng làm phương tiện giảng dạy trong khoa học máy tính mặc dù ngôn ngữ này không được thiết kế dành cho người nhập môn.</p>
@@ -35,7 +22,7 @@
         <br />
         <div class="btn">
             <button class="btnright">
-                <a href="Bai2_C.aspx">Trang Sau >></a>
+                <a href="Bai2_C.aspx">Trang Sau</a>
             </button>
         </div>
     </section>

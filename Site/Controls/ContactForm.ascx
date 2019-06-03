@@ -6,7 +6,7 @@
     .auto-style2 {
         width: 209px;
     }
-    .auto-style3 {
+    .formlh3 {
         height: 61px;
         text-align:center;
         color: #fff;
@@ -18,16 +18,16 @@
         width: 209px;
         height: 38px;
     }
-    .auto-style6 {
+    .formlh6 {
         width: 293px;
         height: 38px;
         color:#fff;
     }
-    .auto-style7 {
+    .formlh7 {
         width: 293px;
         color:#fff;
     }
-    .auto-style8 {
+    .formlh8 {
         width: 293px;
         color: #fff;
         height: 70px;
@@ -57,10 +57,10 @@
 <ContentTemplate>
 <table class="auto-style1" runat="server" id="FormTable">
     <tr>
-        <td class="auto-style3" colspan="3">Vui lòng nhập tên, email, số điện thoại của bạn</td>
+        <td class="formlh3" colspan="3">Vui lòng nhập tên, email, số điện thoại của bạn</td>
     </tr>
     <tr>
-        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên</td>
+        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên</td>
         <td class="auto-style5">
             <asp:TextBox ID="Name" runat="server" Width="170px" Height="22px"></asp:TextBox>
         </td>
@@ -69,7 +69,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Địa chỉ Email</td>
+        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Địa chỉ Email</td>
         <td class="auto-style5">
             <asp:TextBox ID="EmailAddress" runat="server" TextMode="Email" Width="170px" Height="22px"></asp:TextBox>
         </td>
@@ -79,7 +79,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xác nhận địa chỉ Email</td>
+        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xác nhận địa chỉ Email</td>
         <td class="auto-style5">
             <asp:TextBox ID="ConfirmEmailAddress" runat="server" TextMode="Email" Width="170px" Height="22px"></asp:TextBox>
         </td>
@@ -89,7 +89,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cá nhân</td>
+        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cá nhân</td>
         <td class="auto-style5">
             <asp:TextBox ID="PhoneHome" runat="server" Width="170px" Height="22px"></asp:TextBox>
         </td>
@@ -98,14 +98,14 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cơ quan</td>
+        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cơ quan</td>
         <td class="auto-style5">
             <asp:TextBox ID="PhoneBusiness" runat="server" Width="171px" Height="22px"></asp:TextBox>
         </td>
         <td class="auto-style4"></td>
     </tr>
     <tr>
-        <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú thích</td>
+        <td class="formlh7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú thích</td>
         <td class="auto-style2">
             <asp:TextBox ID="Comments" runat="server" Height="88px" TextMode="MultiLine" Width="170px" OnTextChanged="Comments_TextChanged"></asp:TextBox>
         </td>
@@ -114,7 +114,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style8"></td>
+        <td class="formlh8"></td>
         <td class="auto-style9">
             <asp:Button ID="SendButton" runat="server" Text="Gửi" OnClick="SendButton_Click" Height="36px" Width="85px" />
         </td>

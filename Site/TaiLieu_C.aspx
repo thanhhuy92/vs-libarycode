@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    <section class="tailieu">
+    <section class="tailieuc">
         <p class="titlec">Tài Liệu C/C++</p>
         <div class="boxtailieult">
             <p class="boxlt">C/C++</p>

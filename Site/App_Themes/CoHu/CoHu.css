@@ -21,11 +21,14 @@ body {
     height: 150px;
     width: 100%;
 }
-
+    #header span {
+        background-color: #A9A9A9 !important;
+        color:#fff;
+    }
 .logo {
     width: 85%;
     height: 109px;
-    line-height: 60px;
+    line-height: 109px;
     float: left;
 }
 
@@ -33,6 +36,49 @@ body {
         font-size: 2.7em;
         margin-left: 2%;
     }
+    /*.logo p span {
+        background-color: #A9A9A9 !important;
+    }*/
+#PageWrapper .formdn1 {
+    width: 40%;
+    height: 87px;
+    margin-bottom: 1em;
+    border: 1px ridge #A9A9A9;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+#PageWrapper .formdn7 {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+#PageWrapper .formdk1 {
+    width: 40%;
+    border: 1px ridge #A9A9A9;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom:1em;
+}
+#PageWrapper .formdk28 {
+    height: 55px;
+    background-color:#fff;
+    color:#000;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+#cpMainContent_DangNhapForm_btndangnhap {
+    background-color: #ffffff !important;
+    font-size: 1em;
+    margin-left:-1.5em;
+
+}
+#cpMainContent_DangKyForm_btndangky {
+    background-color: #fff !important;
+    font-size: 1.1em;
+    margin-left: -1.5em;
+}
 
 .dangnhap {
     width: 100%;
@@ -149,17 +195,16 @@ nav {
 }
 
 #trangchu {
-    width: 80%;
+    width: 100%;
     /*height:500px;*/
-    margin-left: 3%;
 }
 
 .gioithieu {
     height: 850px;
-    background-color: #FF6347;
     width: 100%;
-    border-bottom: 20px solid #ffffff;
+    border-bottom: 3px ridge;
     display: block;
+    margin-bottom:1.5em;
 }
 
 .title {
@@ -171,7 +216,6 @@ nav {
     line-height: 50px;
     font-weight: bold;
     font-size: 1.5em;
-    color: #fff;
 }
 
 .noidung {
@@ -181,7 +225,6 @@ nav {
 }
 
     .noidung h3 {
-        color: #fff;
     }
 
     .noidung img {
@@ -191,14 +234,13 @@ nav {
 
     .noidung p {
         text-align: justify;
-        color: #fff;
     }
 
 .laptrinh {
     height: 500px;
-    background-color: #6A5ACD;
     display: block;
-    border-bottom: 20px solid #ffffff;
+    border-bottom: 3px ridge;
+    margin-bottom: 1.5em;
 }
 
 .box {
@@ -220,7 +262,6 @@ nav {
 
     .box p {
         width: 100%;
-        color: #fff;
         display: block;
         /*border:1px solid red;*/
         text-align: justify;
@@ -231,29 +272,19 @@ nav {
         margin-top: 0.8em;
         width: 12%;
         height: 35px;
-        border-radius: 5px;
-        border: none;
     }
 
         .box button a {
             text-decoration: none;
             font-size: 1.2em;
             height: 35px;
-        }
-
-        .box button:hover {
-            background-color: #808080;
-        }
-
-        .box button a:hover {
-            color: #fff;
+            color:#000;
         }
 
 .thietkeweb {
     height: 500px;
-    background-color: #32CD32;
     display: block;
-    border-bottom: 20px solid #ffffff;
+    margin-bottom:1.5em;
 }
 
 #Sidebar {
@@ -290,9 +321,9 @@ nav {
 /*Trang Lập Trình C*/
 
 .ThongTinBai {
-    width: 80%;
+    width: 85%;
     /*border: 1px solid red;*/
-    margin-left: 2em;
+    margin:auto;
 }
 
     .ThongTinBai h2 {
@@ -356,23 +387,24 @@ nav {
     height: 350px;
     margin: 0 auto;
     margin-top: 5em;
-    border-radius: 5px;
-    background-color: #6A5ACD;
+    border:3px ridge;
 }
 
 #cpMainContent_ContactForm_SendButton {
-    border: none;
     width: 100px;
-    border-radius: 5px;
     background-color: #fff !important;
     color: #000;
     font-size: 1.1em;
 }
-
-    #cpMainContent_ContactForm_SendButton:hover {
-        background-color: #808080 !important;
-        color: #fff;
-    }
+#PageWrapper .formlh6{
+    color:#000 !important;
+}
+#PageWrapper .formlh3{
+    color:#000 !important;
+}
+#PageWrapper .formlh7 {
+    color: #000 !important;
+}
 
 /*End Trang Liên Hệ*/
 
@@ -386,12 +418,12 @@ nav {
 }
 
 .sitemap {
-    /*border: 1px solid red;*/
-    width: 35%;
-    height: 25px;
+    border-bottom: 3px ridge;
+    width: 100%;
+    height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
     .sitemap span {
@@ -412,10 +444,10 @@ nav {
 }
 
 footer {
-    background-color: #333;
     width: 100%;
     height: 270px;
     clear: both;
+    border-top:3px ridge;
 }
 
 .footer-box1 {
@@ -426,10 +458,9 @@ footer {
 }
 
     .footer-box1 h2 {
-        color: #fff;
-        width: 35%;
+        width: 40%;
         height: 90px;
-        border-bottom: 1px solid #FFA500;
+        border-bottom: 3px ridge;
         margin-top: 1em;
         margin-left: 3em;
         text-align: center;
@@ -442,7 +473,6 @@ footer {
         /*border:1px solid #fff;*/
         font-size: 1.1em;
         margin-left: 3em;
-        color: #fff;
     }
 
     .footer-box1 i {
@@ -452,7 +482,7 @@ footer {
 
     .footer-box1 p a {
         text-decoration: none;
-        color: #FFA500;
+        color:#000;
     }
 
 .footer-box2 {
@@ -466,18 +496,17 @@ footer {
         height: 120px;
         /*border:1px solid #fff;*/
         text-align: right;
-        color: #fff;
         line-height: 120px;
         margin-right: 2.5em;
     }
 
     .footer-box2 span {
         /*border:1px solid #fff;*/
-        background-color: #FFA500;
+        background-color: #A9A9A9;
+        color:#fff;
     }
 
     .footer-box2 p {
-        color: #fff;
         text-align: right;
         margin-right: 4em;
         font-size: 1.2em;
@@ -493,7 +522,6 @@ footer {
 
 .footer-box2 i {
     font-size: 1.5em;
-    color: #fff;
     margin-right: 0.5em;
     /*border:1px solid #fff;*/
 }
@@ -509,7 +537,10 @@ footer {
 
 .tailieuc {
     height: 400px;
-    width: 80%;
+    width: 100%;
+    margin:auto;
+    margin-bottom:1em;
+    /*border:1px solid red;*/
 }
 
 .titlec {
@@ -520,22 +551,20 @@ footer {
 }
 
 .boxtailieult {
-    width: 10%;
+    width: 11%;
     height: 70px;
-    border: 2px ridge #6A5ACD;
-    border-radius: 0px 15px 0px 0px;
+    border: 2px ridge #A9A9A9;
     margin-left: 5em;
     float: left;
     margin-top: 1.5em;
 }
 
 .boxlt {
-    border-bottom: 1px solid #6A5ACD;
-    border-radius: 0px 12px 0px 0px;
+    border-bottom: 1px solid #A9A9A9;
     text-align: center;
     height: 30px;
     line-height: 30px;
-    background-color: #6A5ACD;
+    background-color: #A9A9A9;
     color: #fff;
 }
 
@@ -551,26 +580,20 @@ footer {
         color: #000;
     }
 
-        .boxsobai a:hover {
-            text-decoration: underline;
-        }
-
 .boxtailieutkw {
-    width: 10%;
+    width: 11%;
     height: 70px;
-    border: 2px ridge #32CD32;
-    border-radius: 0px 15px 0px 0px;
+    border: 2px ridge #A9A9A9;
     margin-left: 5em;
     float: left;
     margin-top: 1.5em;
 }
 
 .boxtkw {
-    border-bottom: 1px solid #32CD32;
-    border-radius: 0px 12px 0px 0px;
+    border-bottom: 1px solid #A9A9A9;
     text-align: center;
     height: 30px;
     line-height: 30px;
-    background-color: #32CD32;
+    background-color: #A9A9A9;
     color: #fff;
 }

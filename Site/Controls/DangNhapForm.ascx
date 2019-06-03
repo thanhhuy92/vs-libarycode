@@ -1,12 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DangNhapForm.ascx.cs" Inherits="Controls_DangNhapForm" %>
 <style type="text/css">
-    .auto-style1 {
+    .formdn1 {
         width: 40%;
         height: 87px;
         margin-bottom: 0px;
         border:1px ridge #A9A9A9;
         margin: 0 auto;
-        margin-top: 10em;
+        margin-top: 4em;
     }
     .auto-style4 {
         width: 189px;
@@ -20,7 +20,7 @@
         height: 47px;
         text-align:center;
     }
-    .auto-style7 {
+    .formdn7 {
         height: 49px;
         font-size:1.8em;
         text-align:center;
@@ -40,13 +40,7 @@
     .auto-style10 {
         height: 33px;
     }
-    #cpMainContent_DangNhapForm_btndangnhap{
-        border:none;
-        background-color:#ff8c00 !important;
-        color:#fff;
-        border-radius:4px;
-        font-size:1em;
-    }
+    
     .auto-style11 {
         height: 33px;
         text-align: center;
@@ -66,9 +60,9 @@
  
 </script>
 
-<table class="auto-style1">
+<table class="formdn1">
     <tr>
-        <td class="auto-style7" colspan="3">Đăng Nhập</td>
+        <td class="formdn7" colspan="3">Đăng Nhập</td>
     </tr>
     <tr>
         <td class="auto-style11" colspan="3">

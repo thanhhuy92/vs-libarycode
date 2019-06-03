@@ -29,9 +29,24 @@ body {
 }
 
 .logo p{
-    color:white;
+    color:#fff;
     font-size:2.7em;
     margin-left:2%;
+}
+#cpMainContent_DangNhapForm_btndangnhap {
+    border: none;
+    background-color: #ff8c00 !important;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-left:1em;
+}
+#cpMainContent_DangKyForm_btndangky {
+    border: none;
+    background-color: #ff8c00 !important;
+    border-radius: 3px;
+    font-size: 1.1em;
+    margin-left: 0.5em;
 }
 .dangnhap{
     width:100%;

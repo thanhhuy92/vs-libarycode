@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Data;
 
 public partial class Controls_DangKyForm : System.Web.UI.UserControl
 {
@@ -16,33 +17,48 @@ public partial class Controls_DangKyForm : System.Web.UI.UserControl
 
     protected void btndangky_Click(object sender, EventArgs e)
     {
-        //string ten = txttendangnhap.Text;
 
-        string sql = "Insert into [Table] (Name, pass, repass, email, reemail) values('" + txttendangnhap.Text + "','" + txtmatkhau.Text + "','" + txtnhaplaimatkhau.Text + "','" + txtemail.Text + "','" + txtnhaplaiemail.Text + "')";
+        string ten = txttendangnhap.Text;
 
-        //string sql1 = "select Name from [Table] where Name ='" + ten + "' ";
+        string sql1 = "select Name from [Table] where Name ='" + ten + "' ";
 
-        SqlCommand cmd = new SqlCommand(sql, conn);
 
-        //SqlCommand cmd1 = new SqlCommand(sql1, conn);
+        if (kiemtratrung(sql1)==true)
+        {
+            Response.Write("<script>alert('Tên đăng nhập đã có !!!');</script>");
+            txttendangnhap.Text = "";
+            txttendangnhap.Focus();
+        }
+        else
+        {
+            string sql = "Insert into [Table] (Name, pass, repass, email, reemail) values('" + txttendangnhap.Text + "','" + txtmatkhau.Text + "','" + txtnhaplaimatkhau.Text + "','" + txtemail.Text + "','" + txtnhaplaiemail.Text + "')";
 
-        conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+
+            conn.Open();
+
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            Response.Write("<script>alert('Chúc mừng bạn đăng ký thành công !!!');</script>");
+        }
         
-        cmd.ExecuteNonQuery();
-        conn.Close();
-        Response.Write("<script>alert('Chúc mừng bạn đăng ký thành công !!!');</script>");
-        //Response.Redirect("TrangChu.aspx");
-        //if (txttendangnhap.Text != ten)
-        //{
-        //    Response.Write("<script>alert('Chúc mừng bạn đăng ký thành công !!!');</script>");
-        //}
-        //else
-        //{
-        //    Response.Write("<script>alert('Tên đăng nhập đã có !!!');</script>");
-        //    txttendangnhap.Text = "";
-        //    txttendangnhap.Focus();
-        //}
 
 
+    }
+    private bool kiemtratrung(string sql)
+    {
+
+        SqlDataAdapter da = new SqlDataAdapter(sql,conn);
+
+        DataTable tb = new DataTable();
+
+        da.Fill(tb);
+
+        if (tb.Rows.Count > 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

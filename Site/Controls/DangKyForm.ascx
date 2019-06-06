@@ -84,7 +84,7 @@
             <asp:TextBox ID="txttendangnhap" runat="server" Width="170px" CssClass="auto-style30"></asp:TextBox>
         </td>
         <td class="auto-style9">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txttendangnhap" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Hãy nhập tên đăng nhập">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txttendangnhap" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập tên đăng nhập">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -93,7 +93,7 @@
             <asp:TextBox ID="txtmatkhau" runat="server" Width="170px" TextMode="Password"></asp:TextBox>
         </td>
         <td class="auto-style12">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtmatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Hãy nhập mật khẩu">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtmatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập mật khẩu">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -102,8 +102,8 @@
             <asp:TextBox ID="txtnhaplaimatkhau" runat="server" Width="170px" TextMode="Password"></asp:TextBox>
         </td>
         <td class="auto-style15">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtnhaplaimatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập thông tin này">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtmatkhau" ControlToValidate="txtnhaplaimatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập không khớp">*</asp:CompareValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtnhaplaimatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập lại mật khẩu">*</asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtmatkhau" ControlToValidate="txtnhaplaimatkhau" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Mật khẩu không khớp">*</asp:CompareValidator>
         </td>
     </tr>
     <tr>
@@ -112,8 +112,8 @@
             <asp:TextBox ID="txtemail" runat="server" Width="170px"></asp:TextBox>
         </td>
         <td class="auto-style15">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập thông tin này !">*</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập không hợp lệ" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập email">*</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập email không hợp lệ" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
@@ -122,8 +122,8 @@
             <asp:TextBox ID="txtnhaplaiemail" runat="server" Width="170px"></asp:TextBox>
         </td>
         <td class="auto-style18">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtnhaplaiemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập thông tin này !">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToCompare="txtemail" ControlToValidate="txtnhaplaiemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập không trùng">*</asp:CompareValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtnhaplaiemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập lại email">*</asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToCompare="txtemail" ControlToValidate="txtnhaplaiemail" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Email không khớp">*</asp:CompareValidator>
         </td>
     </tr>
     <tr>
@@ -132,5 +132,10 @@
             <asp:Button ID="btndangky" runat="server" Height="34px" OnClick="btndangky_Click" Text="Đăng Ký" Width="110px" />
         </td>
         <td class="auto-style32"></td>
+    </tr>
+    <tr>
+        <td class="auto-style32" colspan="3">
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="ErrorMessage" ShowMessageBox="True" ShowSummary="False" />
+        </td>
     </tr>
 </table>

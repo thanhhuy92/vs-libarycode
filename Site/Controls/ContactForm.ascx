@@ -21,7 +21,7 @@
     .formlh6 {
         width: 293px;
         height: 38px;
-        color:#fff;
+        /*color:#fff;*/
     }
     .formlh7 {
         width: 293px;
@@ -39,9 +39,13 @@
     .auto-style10 {
         height: 70px;
     }
-</style>
+    .auto-style11 {
+        width: 40%;
+        float: left;
+    }
+    </style>
 <script type="text/javascript">
-    function validatePhoneNumbers(source, args) {
+    <%--function validatePhoneNumbers(source, args) {
         var phoneHome = document.getElementById('<%=PhoneHome.ClientID%>');
         var phoneBusiness = document.getElementById('<%=PhoneBusiness.ClientID%>');
         if (phoneHome.value != '' || phoneBusiness.value != '') {
@@ -50,67 +54,42 @@
         else {
             args.IsValid = false;
         }
-    }
+    }--%>
 </script>
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
 <ContentTemplate>
 <table class="auto-style1" runat="server" id="FormTable">
     <tr>
-        <td class="formlh3" colspan="3">Vui lòng nhập tên, email, số điện thoại của bạn</td>
+        <td class="formlh3" colspan="3">Vui lòng nhập số điện thoại, chú thích.</td>
     </tr>
     <tr>
         <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên</td>
         <td class="auto-style5">
-            <asp:TextBox ID="Name" runat="server" Width="170px" Height="22px"></asp:TextBox>
+            <button ID="btnlhdangnhap" runat="server" ><a href="../DangNhap.aspx">Đăng Nhập</a></button>
+            <asp:Label ID="lblhxinchao" runat="server" Text="Xin chào,"></asp:Label>
+            <asp:Label ID="lblhten" runat="server" Text="Tên"></asp:Label>
+            <asp:Button ID="btnlhthoat" runat="server" Text="Thoát" OnClick="btnlhthoat_Click" OnClientClick="return confirms" />
         </td>
         <td class="auto-style4">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Name" CssClass="Error Message" ErrorMessage="Enter your name">*</asp:RequiredFieldValidator>
-        </td>
-    </tr>
-    <tr>
-        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Địa chỉ Email</td>
-        <td class="auto-style5">
-            <asp:TextBox ID="EmailAddress" runat="server" TextMode="Email" Width="170px" Height="22px"></asp:TextBox>
-        </td>
-        <td class="auto-style4">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="EmailAddress" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập địa chỉ Email">*</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="EmailAddress" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập địa chỉ Email hợp lệ" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
-        </td>
-    </tr>
-    <tr>
-        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xác nhận địa chỉ Email</td>
-        <td class="auto-style5">
-            <asp:TextBox ID="ConfirmEmailAddress" runat="server" TextMode="Email" Width="170px" Height="22px"></asp:TextBox>
-        </td>
-        <td class="auto-style4">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ConfirmEmailAddress" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Xác nhận địa chỉ Email">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="EmailAddress" ControlToValidate="ConfirmEmailAddress" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Email không khớp nhau">*</asp:CompareValidator>
-        </td>
+            &nbsp;</td>
     </tr>
     <tr>
         <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cá nhân</td>
         <td class="auto-style5">
-            <asp:TextBox ID="PhoneHome" runat="server" Width="170px" Height="22px"></asp:TextBox>
+            <asp:TextBox ID="txtsdt" runat="server" Width="170px" Height="22px"></asp:TextBox>
         </td>
         <td class="auto-style4">
-            <asp:CustomValidator ID="CustomValidator1" runat="server" ClientValidationFunction="validatePhoneNumbers" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập số điện thoại cá nhân hay số cơ quan" OnServerValidate="CustomValidator1_ServerValidate">*</asp:CustomValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtsdt" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập số điện thoại">*</asp:RequiredFieldValidator>
         </td>
-    </tr>
-    <tr>
-        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại cơ quan</td>
-        <td class="auto-style5">
-            <asp:TextBox ID="PhoneBusiness" runat="server" Width="171px" Height="22px"></asp:TextBox>
-        </td>
-        <td class="auto-style4"></td>
     </tr>
     <tr>
         <td class="formlh7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú thích</td>
         <td class="auto-style2">
-            <asp:TextBox ID="Comments" runat="server" Height="88px" TextMode="MultiLine" Width="170px" OnTextChanged="Comments_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="txtchuthich" runat="server" Height="88px" TextMode="MultiLine" Width="170px" OnTextChanged="Comments_TextChanged"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Comments" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Nhập một chú thích">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtchuthich" CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="Bạn chưa nhập một chú thích">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -125,21 +104,16 @@
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="ErrorMessage" HeaderText="Xin hãy nhập đầy đủ thông tin bên dưới:" ShowMessageBox="True" ShowSummary="False" />
         </td>
     </tr>
-    <tr>
-        <td colspan="3">&nbsp;</td>      
-    </tr>
 </table>
     
-<asp:Label ID="Message" runat="server" Text="Message Sent" Visible="false"/>
     </ContentTemplate>
 
 </asp:UpdatePanel>
 <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
     <ProgressTemplate>
-        <div class="AJAX">
-            <img ID ="imgajax" runat="server" src="../App_Themes/HienDai/Images/loading.gif" style="width:10%;height:60px;float:left;"/>
-            <%--<Image ID="Image1" runat="server" src="../App_Themes/HienDai/Images/loading.gif"/>--%>
-            <p runat="server" style="width:40%;float:left;margin-top:1.1em;">Vui Lòng Chờ Trong Giây Lát ^-^</p>
+        <div class="formlh12">
+            <img ID ="imgajax" runat="server" src="../App_Themes/HienDai/Images/loading.gif" style="width:10%;height:60px;float:left;text-align:center;"/>
+            <p runat="server" style="margin-top:1.1em;" class="auto-style11">Vui Lòng Chờ Trong Giây Lát ^-^</p>
         </div>
     </ProgressTemplate>
 </asp:UpdateProgress>

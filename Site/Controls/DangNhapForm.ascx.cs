@@ -16,7 +16,7 @@ public partial class Controls_DangNhapForm : System.Web.UI.UserControl
 
     protected void btndangnhap_Click(object sender, EventArgs e)
     {
-        string check = "select count(*) from [Table] where Name='" + txtdangnhap.Text + "'and pass='" + txtmatkhau.Text + "'";
+        string check = "select count(*) from [Login] where MaTen='" + txtdangnhap.Text + "'and MatKhau='" + txtmatkhau.Text + "'";
         SqlCommand cmd = new SqlCommand(check, conn);
         conn.Open();
         int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
@@ -24,7 +24,7 @@ public partial class Controls_DangNhapForm : System.Web.UI.UserControl
 
         if (temp == 1)
         {
-            Session["Name"] = txtdangnhap.Text;
+            Session["MaTen"] = txtdangnhap.Text;
             Response.Redirect("TrangChu.aspx");
         }
         else

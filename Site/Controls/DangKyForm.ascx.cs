@@ -20,7 +20,7 @@ public partial class Controls_DangKyForm : System.Web.UI.UserControl
 
         string ten = txttendangnhap.Text;
 
-        string sql1 = "select Name from [Table] where Name ='" + ten + "' ";
+        string sql1 = "select MaTen from [Login] where MaTen ='" + ten + "' ";
 
 
         if (kiemtratrung(sql1)==true)
@@ -31,7 +31,7 @@ public partial class Controls_DangKyForm : System.Web.UI.UserControl
         }
         else
         {
-            string sql = "Insert into [Table] (Name, pass, repass, email, reemail) values('" + txttendangnhap.Text + "','" + txtmatkhau.Text + "','" + txtnhaplaimatkhau.Text + "','" + txtemail.Text + "','" + txtnhaplaiemail.Text + "')";
+            string sql = "Insert into [Login] (MaTen, MatKhau, ReMatKhau, Email, ReEmail) values('" + txttendangnhap.Text + "','" + txtmatkhau.Text + "','" + txtnhaplaimatkhau.Text + "','" + txtemail.Text + "','" + txtnhaplaiemail.Text + "')";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
 

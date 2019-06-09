@@ -60,7 +60,7 @@
                 <%--<a ID="adn" href="../DangNhap.aspx" style="border-right:1px solid #fff;padding-right:1%;display:block;border:1px solid #fff;">Đăng Nhập</a>--%>
                 <button ID="btndn" runat="server"><a href="../DangNhap.aspx">Đăng Nhập</a></button>
                 <asp:Label ID="lbten" runat="server" Text="Label"></asp:Label>
-                <asp:Button ID="btnthoat" runat="server" Text="Thoát" OnClick="btnthoat_Click"/>
+                <asp:Button ID="btnthoat" runat="server" Text="Thoát" OnClick="btnthoat_Click" OnClientClick="return confirms"/>
                 <%--<a href="../DangKy.aspx" style="margin-left:1%;">Đăng Ký</a>--%>
             </div>
             <nav>
@@ -83,6 +83,14 @@
                     <asp:ListItem>HienDai</asp:ListItem>
                     <asp:ListItem>CoHu</asp:ListItem>
                 </asp:DropDownList>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Label ID="lbtime" runat="server"></asp:Label>
+                    <br />
+                    <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
+                    </asp:Timer>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
                 <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
                 <LevelStyles>
                     <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />

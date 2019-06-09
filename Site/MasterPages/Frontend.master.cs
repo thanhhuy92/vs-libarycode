@@ -40,9 +40,9 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
                 TreeView1.Visible = false;
                 break;
         }
-        if(Session["Name"] != null)
+        if(Session["MaTen"] != null)
         {
-            lbten.Text = Session["Name"].ToString();
+            lbten.Text = Session["MaTen"].ToString();
             btndn.Visible = false;
             
         }
@@ -51,6 +51,8 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
             lbten.Visible = false;
             btnthoat.Visible = false;
         }
+
+        lbtime.Text = System.DateTime.Now.ToString();
     }
 
     protected void ThemeList_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,5 +69,10 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
         Session.RemoveAll();
         Response.Redirect("DangNhap.aspx");
         
+    }
+
+    protected void Timer1_Tick(object sender, EventArgs e)
+    {
+        lbtime.Text = System.DateTime.Now.ToString();
     }
 }

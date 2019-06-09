@@ -289,13 +289,13 @@ nav {
 
 #Sidebar {
     width: 15%;
-    height: 289px;
-    background-color:#fff;
+    height: 325px;
+    background-color: #fff;
     display: none;
-    position:fixed;
+    position: fixed;
     border: 3px ridge;
-    left:0;
-    top:12.5%;
+    left: 0;
+    top: 12.5%;
 }
 
     #Sidebar p {
@@ -597,3 +597,10 @@ footer {
     background-color: #A9A9A9;
     color: #fff;
 }
+
+#UpdatePanel1 {
+    /*border: 1px solid;*/
+    margin-bottom: 1em;
+    text-align: center;
+}
+

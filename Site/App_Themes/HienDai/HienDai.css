@@ -256,16 +256,11 @@ nav {
 #Sidebar {
     background-color: #333;
     width: 15%;
-    height: 460px;
+    height: 480px;
     float: right;
     /*display: none;*/
 }
-#Sidebar p{
-    /*border:1px solid red;*/
-    color:#fff;
-    margin-top: 1em;
-    text-align:center;
-}
+
 #ThemeList{
     /*border:1px solid red;*/
     width: 50%;
@@ -333,7 +328,7 @@ nav {
 
 /*Trang Liên Hệ*/
 #cpMainContent_ContactForm_UpdatePanel1 {
-    height: 500px;
+    height: 300px;
 }
 
 #cpMainContent_ContactForm_FormTable {
@@ -358,6 +353,15 @@ nav {
         background-color: #808080 !important;
         color:#fff;
     }
+
+#btnlhdangnhap{
+    border:none;
+    width:10%;
+    height:30px;
+}
+#btnlhdangnhap a{
+    text-decoration:none;
+}
 
 /*End Trang Liên Hệ*/
 
@@ -471,14 +475,16 @@ footer {
     margin-right:0.5em;
     /*border:1px solid #fff;*/
 }
-
+#PageWrapper .formlh12 {
+    margin-top: 3.5em;
+    margin-left: 20em;
+}
 .AJAX {
     height: 150px;
-    width: 60%;
+    width: 100%;
     /*background-image:url(Images/loading-click.gif);
     background-repeat:no-repeat;*/
     /*line-height:32px;*/
-    margin: 0 auto;
 }
 
 .tailieuc{
@@ -538,5 +544,44 @@ footer {
     height: 30px;
     line-height: 30px;
     background-color: #32CD32;
+    color: #fff;
+}
+#cpMainContent_ContactForm_btnlhdangnhap {
+    border: none;
+    width: 35%;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+#cpMainContent_ContactForm_btnlhdangnhap a {
+        text-decoration: none;
+        color: #000;
+    }
+
+#cpMainContent_ContactForm_btnlhdangnhap:hover {
+        background-color: #808080;
+}
+#cpMainContent_ContactForm_btnlhdangnhap a:hover{
+    color:#fff;
+}
+#cpMainContent_ContactForm_btnlhthoat{
+    border: none;
+    width: 35%;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color:#fff!important;
+    color:#000;
+}
+#cpMainContent_ContactForm_btnlhthoat:hover{
+    background-color: #808080 !important;
+    color:#fff;
+}
+
+#UpdatePanel1 {
+    /*border: 1px solid #fff;*/
+    margin-top: 1em;
+    text-align: center;
     color: #fff;
 }

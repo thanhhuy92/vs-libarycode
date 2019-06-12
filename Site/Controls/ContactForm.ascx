@@ -57,8 +57,8 @@
     }--%>
 </script>
 
-<asp:UpdatePanel ID="UpdatePanel1" runat="server">
-<ContentTemplate>
+<%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">--%>
+<%--<ContentTemplate>--%>
 <table class="auto-style1" runat="server" id="FormTable">
     <tr>
         <td class="formlh3" colspan="3">Vui lòng nhập số điện thoại, chú thích.</td>
@@ -106,9 +106,9 @@
     </tr>
 </table>
     
-    </ContentTemplate>
+    <%--</ContentTemplate>--%>
 
-</asp:UpdatePanel>
+<%--</asp:UpdatePanel>--%>
 <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
     <ProgressTemplate>
         <div class="formlh12">

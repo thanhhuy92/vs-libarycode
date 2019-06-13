@@ -32,4 +32,8 @@
 * Ở đây, người dùng muốn đưa ý kiến lên admin thì phải đăng nhập tài khoản.<br/><br/>
 <img src="image/hd12.jpg" width="300px" height="auto"/><br/>
 * Sau khi người dùng đưa ý kiến vào thì click nút "Gửi" sẽ có hiệu ứng đợi 5s và sau đó là thông báo "Gửi thành công !!!".<br/><br/>
-<img src="image/hd13.jpg" width="300px" height="auto"/>
+<img src="image/hd13.jpg" width="300px" height="auto"/><br/>
+* Dữ liệu bảng Login.<br/><br/>
+<img src="image/dl2.jpg" width="300px" height="auto"/><br/>
+* Dữ liệu bảng LienHe, có liên kết với bảng Login qua MaTen.<br/><br/>
+<img src="image/dl1.jpg" width="300px" height="auto"/><br/>

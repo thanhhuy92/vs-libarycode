@@ -13,4 +13,4 @@
 * Để ý thấy thì ở góc trên cùng bên phải là nút "Đăng Nhập" thì bây giờ thành tên người dùng và nút "Thoát".
 * Nếu người dùng không muốn dùng tài khoản đó nữa thì người dùng có quyền thoát bằng cách click vào nút "Thoát".
 * Tiếp theo, thanh menu "Libary Coder" gồm có Trang Chủ, C/C++, C#, HTML/HTML5, CSS/CSS3 và Liên Hệ.
-* Theme Hiện Đại, thanh menu được thiết kế theo cách phổ thông nhất. Còn theme Cổ Hủ, thanh menu được thiết kế theo kiểu treeview và gán chúng với thanh sidebar 
+* Theme Hiện Đại, thanh menu được thiết kế theo cách phổ thông nhất. Còn theme Cổ Hủ, thanh menu được thiết kế theo kiểu treeview, gán chúng với thanh sidebar và ở chế độ ẩn dưới nút icon 3 gạch ở bên trái.

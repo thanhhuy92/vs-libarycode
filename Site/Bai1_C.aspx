@@ -10,7 +10,7 @@
         <p><strong>C++</strong> (đọc là "C cộng cộng" hay "xi-plus-plus", IPA: /siː pləs pləs/) là một loại ngôn ngữ lập trình. Đây là một dạng ngôn ngữ đa mẫu hình tự do có kiểu tĩnh và hỗ trợ lập trình thủ tục, dữ liệu trừu trượng, lập trình hướng đối tượng, và lập trình đa hình. Từ thập niên 1990, C++ đã trở thành một trong những ngôn ngữ thương mại phổ biến nhất trong khi đó.</p>
         <p>Bjarne Stroustrup của Bell Labs đã phát triển C++ (mà tên nguyên thủy là "C với các lớp" trong suốt thập niên 1980 như là một bản nâng cao của ngôn ngữ C. Những bổ sung nâng cao bắt đầu với sự thêm vào của khái niệm lớp, tiếp theo đó là các khái niệm hàm ảo, chồng toán tử, đa kế thừa, tiêu bản, và xử lý ngoại lệ. Tiêu chuẩn của ngôn ngữ C++ đã được thông qua trong năm 1998 như là ISO/IEC 14882:1998. Phiên bản hiện đang lưu hành là phiên bản 2003, ISO/IEC 14882:2003. Hiện tại tiêu chuẩn mới nhất của ngôn ngữ C++ là C++11 (ISO/IEC 14882:2011).</p>
         <p>Ví dụ: In ra màn hình "Hello world!"</p>
-        <img src="../../App_Themes/Monochrome/Images/helloworld.jpg" />
+        <img src="../../App_Themes/HienDai/Images/helloworld.jpg" />
         <br /><br />
         <p><strong>* Chú giải:</strong></p>
         <p>1. Chỉ thị tiền xử lý: #include để chèn vào nội dung của tập tin header, ví dụ:  <stdio.h>  trong chương trình. <stdio.h> là tập tin header chuẩn của C++ và chứa đựng các định nghĩa cho xuất và nhập.</p>

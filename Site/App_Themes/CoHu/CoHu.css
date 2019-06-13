@@ -149,17 +149,17 @@ nav {
     text-decoration: underline;
 }
 
-.icon{
-    width:3%;
-    height:35px;
-    line-height:35px;
-    font-size:1.5em;
-    border:2px solid #fff;
-    color:#fff;
-    left:0;
-    top:6%;
-    position:fixed;
-    text-align:center;
+.icon {
+    width: 3%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.5em;
+    border: 2px solid #fff;
+    color: #fff;
+    left: 1.5%;
+    top: 6%;
+    position: fixed;
+    text-align: center;
 }
 /*End Header*/
 
@@ -355,24 +355,20 @@ nav {
     .btn a {
         text-decoration: none;
         font-size: 18px;
-        color: white;
+        color: #000;
     }
 
 .btnleft {
     width: 12%;
-    border: none;
     height: 40px;
     line-height: 40px;
-    background-color: #FFA500;
     margin-right: 0.5em;
 }
 
 .btnright {
     width: 12%;
-    border: none;
     height: 40px;
     line-height: 40px;
-    background-color: #FFA500;
     margin-left: 0.5em;
 }
 /*End Trang Lập Trình C*/
@@ -603,4 +599,15 @@ footer {
     margin-bottom: 1em;
     text-align: center;
 }
-
+#cpMainContent_ContactForm_btnlhdangnhap{
+   width:45%;
+   height:30px;
+}
+#cpMainContent_ContactForm_btnlhdangnhap a{
+   text-decoration:none;
+   color:#000;
+}
+#cpMainContent_ContactForm_btnlhthoat {
+    width: 30%;
+    height: 25px;
+}

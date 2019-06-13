@@ -256,10 +256,16 @@ nav {
 #Sidebar {
     background-color: #333;
     width: 15%;
-    height: 480px;
+    height: 495px;
     float: right;
     /*display: none;*/
 }
+    #Sidebar p {
+        /*border:1px solid red;*/
+        color: #fff;
+        margin-top: 1em;
+        text-align: center;
+    }
 
 #ThemeList{
     /*border:1px solid red;*/
@@ -476,7 +482,7 @@ footer {
     /*border:1px solid #fff;*/
 }
 #PageWrapper .formlh12 {
-    margin-top: 3.5em;
+    /*margin-top: 3.5em;*/
     margin-left: 20em;
 }
 .AJAX {

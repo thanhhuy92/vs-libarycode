@@ -44,9 +44,9 @@
         <p>6. graphics.h: Thư viện chứa các hàm liên quan đến đồ họa.</p><br />
         <p>Gồm các hàm:<i>initgraph(), line(), circle(), putpixel(), getpixel(), setcolor(),...</i></p><br /><br />
         <p>Ví dụ 1: Tính tổng hai số nguyên a, b cho trước.</p><br />
-        <img src="../../App_Themes/Monochrome/Images/tinhtong.jpg" />
+        <img src="../../App_Themes/HienDai/Images/tinhtong.jpg" />
         <p>Ví dụ 2: Tính chu vi và diện tích của tam giác với 3 cạnh cho trước.</p><br />
-        <img src="../../App_Themes/Monochrome/Images/cv-dt-tam-giac.jpg" />
+        <img src="../../App_Themes/HienDai/Images/cv-dt-tam-giac.jpg" />
         <div class="btn">
             <button class="btnleft">
                 <a href="Bai1_C.aspx">Trang Trước</a>

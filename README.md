@@ -1,8 +1,8 @@
 # Thiết kế website ASP.Net với tiêu đề "Libary Coder"
 * "Libary Coder" được thiết kế theo 2 theme: Hiện Đại và Cổ Hủ.
 * Sau đây là trang chủ của "Libary Coder".
-<img src="image/hd1.jpg" width="350px" height="auto"/>
-<img src="image/ch1.jpg" width="350px" height="auto"/>
+<img src="image/hd1.jpg" width="300px" height="auto"/><img src="image/ch1.jpg" width="300px" height="auto"/>
+
 * Bên trái, nhiều màu sắc đại diện cho theme Hiện Đại và bên phải, chỉ có màu trắng đen đại diện cho theme Cổ Hủ.
 * Ở góc trên cùng bên phải là nút "Đăng Nhập". CLick vào nút "Đăng Nhập" sẽ đưa người dùng tới trang đăng nhập.
 * Ở đây, nếu người dùng chưa có tài khoản thì click vào dòng chữ "Chưa có tài khoản?"

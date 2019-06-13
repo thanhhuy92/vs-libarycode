@@ -21,7 +21,7 @@
     .formlh6 {
         width: 293px;
         height: 38px;
-        /*color:#fff;*/
+        color:#fff;
     }
     .formlh7 {
         width: 293px;
@@ -64,7 +64,7 @@
         <td class="formlh3" colspan="3">Vui lòng nhập số điện thoại, chú thích.</td>
     </tr>
     <tr>
-        <td class="formlh6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên</td>
+        <td class="formlh6">&nbsp;</td>
         <td class="auto-style5">
             <button ID="btnlhdangnhap" runat="server" ><a href="../DangNhap.aspx">Đăng Nhập</a></button>
             <asp:Label ID="lblhxinchao" runat="server" Text="Xin chào,"></asp:Label>

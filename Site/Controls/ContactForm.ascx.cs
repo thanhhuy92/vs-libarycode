@@ -57,17 +57,18 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
         //    
         //}
 
-            string sql = "Insert into LienHe (SDT, ChuThich, MaTen) Values('" + txtsdt.Text + "','" + txtchuthich.Text + "','" + lblhten.Text + "')";
+        string sql = "Insert into LienHe (SDT, ChuThich, MaTen) Values('" + txtsdt.Text + "','" + txtchuthich.Text + "','" + lblhten.Text + "')";
 
-            SqlCommand cmd = new SqlCommand(sql, conn);
+        SqlCommand cmd = new SqlCommand(sql, conn);
 
-            conn.Open();
+        conn.Open();
 
-            cmd.ExecuteNonQuery();
-            conn.Close();
-
-            System.Threading.Thread.Sleep(5000);
-        
+        cmd.ExecuteNonQuery();
+        conn.Close();
+        Response.Write("<script>alert('Gửi thành công !!!');</script>");
+        System.Threading.Thread.Sleep(5000);
+        txtsdt.Text = "";
+        txtchuthich.Text = "";  
     }
 
     protected void Comments_TextChanged(object sender, EventArgs e)
